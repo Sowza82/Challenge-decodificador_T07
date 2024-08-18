@@ -6,11 +6,12 @@ Este projeto é uma aplicação de criptografia e descriptografia de texto, dese
 
 ## Funcionalidades
 
-- **Criptografar Texto**: Substitui caracteres específicos por strings predefinidas.
+- **Criptografar Texto**:  Substitui caracteres específicos por strings predefinidas.
 - **Descriptografar Texto**: Reverte a criptografia, retornando o texto original.
 - **Copiar Texto**: Copia o resultado da criptografia/descriptografia para a área de transferência.
 - **Interface Responsiva**: Adaptada para diferentes tamanhos de tela, oferecendo uma boa experiência em dispositivos móveis.
-
+- **Alertas**: Notifica o usuário com mensagens de alerta em situações específicas, como quando o texto é copiado ou se nenhum texto for inserido.
+  
 ## Tecnologias Utilizadas
 
 - **HTML5**: Para a estrutura do site.

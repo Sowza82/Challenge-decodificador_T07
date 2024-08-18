@@ -54,7 +54,7 @@ main {
     gap: 40px;
     max-width: 100%;
     margin-top: -20px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     padding: 20px;
     position: relative;
 }
@@ -251,8 +251,10 @@ main {
 .btn-criptografar:focus,
 .btn-desencriptar:focus,
 .btn-copiar:focus {
-    outline: 3px solid var(--cor-alerta);
-    outline-offset: 2px;
+    outline: 3px solid var(--cor-alerta); /* Contorno mais espesso para maior visibilidade */
+    outline-offset: 4px; /* Aumenta o espaçamento entre o contorno e o botão */
+    box-shadow: 0 0 0 4px rgba(10, 56, 113, 0.5); /* Adiciona uma sombra leve ao redor do contorno */
+    transition: outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Suaviza a transição de foco */
 }
 
 
@@ -295,20 +297,30 @@ footer a:hover {
 @media (max-width: 768px) {
     .texto {
         padding: 10px;
+        max-width: 100%;
     }
 
     .botoes {
         flex-direction: column;
-        gap: 10px;
+        gap: 16px;
+        width: 100%;
     }
 
     .btn-criptografar,
     .btn-desencriptar,
     .btn-copiar {
         width: 100%;
+        height: auto; 
     }
 
     .btn-copiar {
         display: block;
+    }
+    .mensagem {
+        max-width: 100%; 
+        padding: 16px; 
+    }
+    .resposta {
+        max-width: 100%; 
     }
 }
