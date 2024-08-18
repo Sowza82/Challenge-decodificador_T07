@@ -19,7 +19,31 @@ Este projeto é uma aplicação de criptografia e descriptografia de texto, dese
 
 ## Capturas de Tela
 
-![Captura de tela da aplicação](./imgs/Challenge.jpg)
+![Captura de tela da aplicação](./imgs/challenge.jpg)
+
+## Como Usar
+
+1. Digite o texto na área designada.
+2. Clique em "Criptografar!" para aplicar a criptografia ou em "Descriptografar!" para reverter o texto.
+3. O resultado aparecerá na área de resposta.
+4. Clique em "Copiar" para copiar o texto criptografado/descriptografado.
+5. Opcionalmente, você pode colar o texto copiado de volta na área de texto principal.
+
+## Regras de Criptografia
+
+- e é convertido em `enter`
+- i é convertido em `imes`
+- a é convertido em `ai`
+- o é convertido em `ober`
+- u é convertido em `ufat`
+
+## Regras de Descriptografia
+
+- `enter` é convertido em e
+- `imes` é convertido em i
+- `ai` é convertido em a
+- `ober` é convertido em o
+- `ufat` é convertido em u
 
 ## Autor
 
