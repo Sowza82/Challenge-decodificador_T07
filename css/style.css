@@ -53,11 +53,13 @@ main {
     justify-content: center;
     gap: 40px;
     max-width: 100%;
-    margin-top: -20px;
-    margin-bottom: 60px;
+    margin-top: -20px; 
+    margin-bottom: 80px; 
     padding: 20px;
+    padding-bottom: 60px; 
     position: relative;
 }
+
 
 /* Seção Texto */
 .texto {
@@ -68,7 +70,8 @@ main {
     max-width: 680px;
     margin: 0 auto;
     padding: 30px 10px;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -91,8 +94,11 @@ main {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 10px;
     font-size: 14px;
     color: var(--cor-texto-neutro);
+    justify-content: flex-start; 
+    width: 100%; 
 }
 
 .text-aviso p {
@@ -125,6 +131,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 0px;
+
 }
 
 /* Estilo do Conteúdo da Mensagem */
@@ -172,6 +180,7 @@ main {
     width: 100%;
     max-width: 680px;
     margin: 20px 0;
+    margin-bottom: 10px; 
     gap: 24px;
     position: relative;
 }
@@ -251,10 +260,10 @@ main {
 .btn-criptografar:focus,
 .btn-desencriptar:focus,
 .btn-copiar:focus {
-    outline: 3px solid var(--cor-alerta); /* Contorno mais espesso para maior visibilidade */
-    outline-offset: 4px; /* Aumenta o espaçamento entre o contorno e o botão */
-    box-shadow: 0 0 0 4px rgba(10, 56, 113, 0.5); /* Adiciona uma sombra leve ao redor do contorno */
-    transition: outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Suaviza a transição de foco */
+    outline: 3px solid var(--cor-alerta); 
+    outline-offset: 4px; 
+    box-shadow: 0 0 0 4px rgba(10, 56, 113, 0.5); 
+    transition: outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
 }
 
 
@@ -270,7 +279,7 @@ main {
 footer {
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -294,6 +303,8 @@ footer a:hover {
 }
 
 /* Estilo de Responsividade */
+
+/* Telas pequenas (smartphones) */
 @media (max-width: 768px) {
     .texto {
         padding: 10px;
@@ -316,11 +327,95 @@ footer a:hover {
     .btn-copiar {
         display: block;
     }
+
     .mensagem {
         max-width: 100%; 
         padding: 16px; 
     }
+
     .resposta {
         max-width: 100%; 
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    footer p {
+        margin: 0 10px;
+    }
+}
+
+/* Telas médias (tablets, telas menores de laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .texto {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .botoes {
+        flex-direction: row;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .btn-criptografar,
+    .btn-desencriptar,
+    .btn-copiar {
+        width: 48%;
+        height: auto; 
+    }
+
+    .mensagem {
+        max-width: 100%; 
+        padding: 20px; 
+    }
+
+    .resposta {
+        max-width: 100%; 
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* Telas grandes (laptops, desktops) */
+@media (min-width: 1025px) {
+    .texto {
+        padding: 20px;
+        max-width: 680px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        gap: 32px;
+        width: 680px;
+    }
+
+    .btn-criptografar,
+    .btn-desencriptar,
+    .btn-copiar {
+        width: 328px;
+        height: auto; 
+    }
+
+    .mensagem {
+        max-width: 336px; 
+        padding: 24px; 
+    }
+
+    .resposta {
+        max-width: 336px; 
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 16px;
+        line-height: 1.6;
     }
 }
