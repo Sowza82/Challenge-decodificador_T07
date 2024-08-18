@@ -19,7 +19,7 @@ Este projeto é uma aplicação de criptografia e descriptografia de texto, dese
 
 ## Capturas de Tela
 
-![Captura de tela da aplicação](./imgs/challenge.jpg)
+![Captura de tela da aplicação](./imgs/challenge.png)
 
 ## Como Usar
 
@@ -47,7 +47,7 @@ Este projeto é uma aplicação de criptografia e descriptografia de texto, dese
 
 ## Autor
 
-- **Tatiane Souza** - [LinkedIn](https://www.linkedin.com/in/sowza82-tatiane-souza/) 
+- **Tatiane Souza** - [LinkedIn](https://www.linkedin.com/in/sowza82-tatiane-souza/)
 
 ## Licença
 
